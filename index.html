@@ -6,7 +6,7 @@
     <title>Turismo Córdoba</title>
     <style>
      
-       .imagen_fondo {
+    .imagen_fondo {
     background-image: url("./src/img/cordoba_fondo.jpeg");
     background-size: cover;
     background-position: center;
@@ -20,7 +20,69 @@
 
     padding: 40px;
     box-sizing: border-box;
-}
+    }
+
+    /* Videos youtube */
+    .fondo_video{
+        background-image: url("./src/img/mesquita.jpg");
+        /* tamaño div videos*/
+        flex: 1; 
+ 
+    }
+
+    .boton {
+            display: inline-block;
+            background-color: goldenrod;
+            color: #001629;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #e9bb45;
+        }
+
+    /* FOOTER */
+        footer {
+            background-color: #001629;
+            color: white;
+            padding: 20px 10px;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-menu {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .redes {
+            display: flex;
+            gap: 15px;
+        }
+
+        .redes a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        
+        
     </style> 
 </head>
 <body style="margin: 0px;">
@@ -45,20 +107,28 @@
 
     <section class="imagen_fondo" >
     <div>
-        <h1 style="margin: 0;">Historia, cultura<br>y patrimonio</h1>
-        <p>
+        <h1 style="margin: 0; color:#053c6b;">Historia, cultura<br>y patrimonio</h1>
+        <p style="color:#053c6b;;">
             Descubre una ciudad única, donde el pasado
             y el presente se unen para ofrecerte
             una experiencia inolvidable.
         </p>
-        <a href="#Lugares">Conoce Córdoba</a>
+        <a href="#Lugares" class="boton">
+                    Conoce Córdoba
+                </a>
     </div>
-</section>
+</section> 
 
         <!-- Segunda Informacion -->
         <section style="width: 100%; padding: 30px 0;">
             <div style="padding: 40px;">
             <h2 style="text-align: center;">Bien venido A Córdoba</h2>
+
+            <div class="linea" style="width: 65px;
+            height: 3px;
+            background-color: goldenrod;
+            margin: 20px auto 0;"></div>
+
             <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Hic illum mollitia sit amet consectetur adipisicing elit.
                  Hic illum mollitia</p>
@@ -69,7 +139,7 @@
 
         </section>
 
-<section style="width: 100%; padding: 30px 0; background-color: rgb(211, 191, 166);">
+<section style="width: 100%; padding: 30px 0;">
 <h2 style="margin: 0;">Lugares Imprescindibles</h2>
 <div style="display: flex; gap: 20px; padding: 20px;">
 
@@ -100,8 +170,9 @@
 </div>
         </section>
 
+<!-- Apartado de la tabla-->
 
-    <section style="width: 100%; padding: 30px 0; background-color: rgb(150, 94, 27);">
+    <section style="width: 100%; padding: 30px 0;">
     
     <div style="margin: auto; max-width: 1100px;">
         <h2 style="margin: 0;">Planifica tu Visita</h2>
@@ -127,13 +198,70 @@
             <td style="border:1px solid black" border="1px">45</td>
         </tr>
     </table>
-
     </div>
-
     </section>
 
+    <!-- Apartado videos -->
+    <section style="width: 100%; padding: 30px 0;">
+
+        <div style="display: flex; gap: 20px; padding: 20px; max-width: 1100px; margin: auto;">
+
+            <div class="fondo_video">
+                <img src="./src/img/logo_youtube.png" alt="" style="height: 60px; width: 80px; margin: 42px 0px 0px 80px;">
+            </div>
+
+            <div class="fondo_video">
+                <img src="./src/img/logo_youtube.png" alt="" style="height: 60px; width: 80px; margin: 42px 0px 0px 80px; ">
+            </div>
+
+            <div class="fondo_video">
+                <img src="./src/img/logo_youtube.png" alt="" style="height: 60px; width: 80px; margin: 42px 0px 0px 80px; ">
+            </div>
+
+        </div>
+
+    </section>
     </main>
 
-    <footer></footer>
+     <!-- FOOTER -->
+    <footer id="Contacto">
+
+        <div class="contenedor footer-contenido">
+
+            <a href="#inicio" class="logo">
+                <img src="./src/img/icono_cordoba.png"
+                     alt="Logo Córdoba" style="width: 70px; height: 70px; margin-right: 8px; object-fit: contain;">
+
+                <div>
+                    <h2>DESCUBRE</h2>
+                    <h2 class="cordoba">CÓRDOBA</h2>
+                </div>
+            </a>
+
+            <div class="footer-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#Lugares">Lugares</a>
+                <a href="#Horarios">Horarios</a>
+                <a href="#Videos">Vídeos</a>
+                <a href="#Contacto">Contacto</a>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Instagram">Instagram</a>
+
+                <a href="https://www.facebook.com/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook">Facebook</a>
+
+                <a href="https://www.youtube.com/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="YouTube">YouTube</a>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 </html>
